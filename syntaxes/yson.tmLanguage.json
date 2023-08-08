@@ -1,0 +1,44 @@
+{
+  "scopeName": "source.yson",
+  "fileTypes": [
+    ".yson"
+  ],
+  "name": "YSON",
+  "patterns": [
+    {
+      "name": "keyword.operator.assignment.yson",
+      "match": "="
+    },
+    {
+      "name": "constant.numeric.yson",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "keyword.control.yson",
+      "match": "\\b(%true|%false)\\b"
+    },
+    {
+      "name": "string.quoted.double.yson",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.yson",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "punctuation.separator.key-value.yson",
+      "match": ";"
+    },
+    {
+      "name": "punctuation.definition.block.yson",
+      "match": "[{}]"
+    },
+    {
+      "name": "punctuation.definition.array.yson",
+      "match": "[\\[\\]]"
+    }
+  ]
+}

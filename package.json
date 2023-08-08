@@ -1,0 +1,26 @@
+{
+  "name": "yson",
+  "displayName": "YSON",
+  "description": "Adds YSON support to VS Code",
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "yson",
+      "aliases": ["yson", "yson"],
+      "extensions": [".yson"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "yson",
+      "scopeName": "",
+      "path": "./syntaxes/yson.tmLanguage.json"
+    }]
+  }
+}
