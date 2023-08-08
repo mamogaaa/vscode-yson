@@ -7,7 +7,7 @@
     "url": "https://github.com/nordikafiles/vscode-yson"
   },
   "license": "Apache-2.0",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -23,7 +23,7 @@
     }],
     "grammars": [{
       "language": "yson",
-      "scopeName": "",
+      "scopeName": "source.yson",
       "path": "./syntaxes/yson.tmLanguage.json"
     }]
   }
