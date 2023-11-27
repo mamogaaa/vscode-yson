@@ -1,0 +1,10 @@
+go.ytsaurus.tech/library/go/core/xerrors v0.0.3 h1:RLr4bByQ4V4n77eeCdgqM4tBUNe4QDGDSTMqTj/nZn0=
+go.ytsaurus.tech/library/go/core/xerrors v0.0.3/go.mod h1:8u4Vm+WwEJceSGO3+D1m70vdQBc6E+q8cTfXMxKHAPs=
+go.ytsaurus.tech/library/go/x/xreflect v0.0.2 h1:S+lfg3G+WrfiBfTYz8droZeyiYYvT4mxLxEbQcNXQFs=
+go.ytsaurus.tech/library/go/x/xreflect v0.0.2/go.mod h1:FJB6bzAVFQxi99CZjUqDSAMu5puEjswFW9Qwj41Yyy8=
+go.ytsaurus.tech/library/go/x/xruntime v0.0.3 h1:/km3v+CPSuID5FsPKvE2LcwmYJPS8TcxeBMGH1MjtVs=
+go.ytsaurus.tech/library/go/x/xruntime v0.0.3/go.mod h1:b+ypj9bGoFpoupNQW2rLJRSrT8rLA0NcUfyBYQwHc68=
+go.ytsaurus.tech/yt/go v0.0.13 h1:gfWI5jZIUxd+eRsRf3Gagw/hdE8DoN5bPOOLb8/C5eo=
+go.ytsaurus.tech/yt/go v0.0.13/go.mod h1:r3puwhqLgS/TD9VZ8/3rhuxtdD02bQ+yuZWncNuW+ZE=
+golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 h1:H2TDz8ibqkAF6YGhCdN3jS9O0/s90v0rJh3X/OLHEUk=
+golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2/go.mod h1:K8+ghG5WaK9qNqU5K3HdILfMLy1f3aNYFI/wnl100a8=
