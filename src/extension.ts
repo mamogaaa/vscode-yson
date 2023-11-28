@@ -26,11 +26,7 @@ export async function activate(context: vscode.ExtensionContext) {
       ): vscode.TextEdit[] {
         if (document.languageId === "yson") {
           // @ts-ignore
-          const newText = formatYson(document.getText(), {
-            asHTML: false,
-            format: "yson",
-            showDecoded: false,
-          });
+          const newText = formatYson(document.getText());
           return [
             new vscode.TextEdit(
               new vscode.Range(
