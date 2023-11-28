@@ -4,11 +4,11 @@
   "description": "Adds YSON support to VS Code",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nordikafiles/vscode-yson"
+    "url": "https://github.com/mamogaaa/vscode-yson"
   },
   "publisher": "mamogaaa",
   "license": "Apache-2.0",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "engines": {
     "vscode": "^1.84.0"
   },
