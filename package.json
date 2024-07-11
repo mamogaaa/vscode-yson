@@ -38,6 +38,18 @@
         "scopeName": "source.yson",
         "path": "./syntaxes/yson.tmLanguage.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "yson.format.pretty",
+        "title": "yson: Format document (pretty)",
+        "enablement": "editorLangId == yson"
+      },
+      {
+        "command": "yson.format.compact",
+        "title": "yson: Format document (compact)",
+        "enablement": "editorLangId == yson"
+      }
     ]
   },
   "scripts": {

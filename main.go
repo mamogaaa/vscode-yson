@@ -6,7 +6,7 @@ import (
 	"go.ytsaurus.tech/yt/go/yson"
 )
  
-func formatYsonWrapper() js.Func {
+func formatYsonWrapper(pretty bool) js.Func {
     return js.FuncOf(func(this js.Value, args []js.Value) interface{} {
         var data any;
         err := yson.Unmarshal([]byte(args[0].String()), &data) 
@@ -14,7 +14,14 @@ func formatYsonWrapper() js.Func {
             panic(err)
         }
 
-        bytes, err := yson.MarshalFormat(&data, yson.FormatPretty)
+        var format yson.Format
+        if pretty {
+            format = yson.FormatPretty
+        } else {
+            format = yson.FormatText
+        }
+        
+        bytes, err := yson.MarshalFormat(&data, format)
         if err != nil {
             panic(err)
         }
@@ -26,6 +33,7 @@ func formatYsonWrapper() js.Func {
 
     
 func main() {
-    js.Global().Set("formatYson", formatYsonWrapper())
+    js.Global().Set("formatYson", formatYsonWrapper(false))
+    js.Global().Set("formatYsonPretty", formatYsonWrapper(true))
     <-make(chan bool)
 }
