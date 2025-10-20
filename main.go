@@ -4,6 +4,8 @@ import (
 	"syscall/js"
 
 	"go.ytsaurus.tech/yt/go/yson"
+
+	formatter "github.com/lesf0/yson-tools/pretty-formatter"
 )
  
 func formatYsonWrapper(pretty bool) js.Func {
@@ -14,19 +16,18 @@ func formatYsonWrapper(pretty bool) js.Func {
             panic(err)
         }
 
-        var format yson.Format
         if pretty {
-            format = yson.FormatPretty
+            formatter := formatter.NewYsonFormatter(4, true, false, "")
+            return formatter.Dump(data) + "\n"
         } else {
-            format = yson.FormatText
-        }
-        
-        bytes, err := yson.MarshalFormat(&data, format)
-        if err != nil {
-            panic(err)
-        }
+            bytes, err := yson.MarshalFormat(&data, yson.FormatText)
 
-        return string(bytes)
+            if err != nil {
+                panic(err)
+            }
+
+            return string(bytes)
+        }
     })
 }
 
